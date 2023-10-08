@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: auto 1fr auto;
+  gap: 3px 3px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "logo header"
+    "sidebar main-content"
+    "sidebar footer";
+  height: 100%;
+  width: 100%;
+}
+
+  
+.logo {
+  background-color: yellow;
+  grid-area: logo;
+}
+
+.header {
+  background-color: cyan;
+  grid-area: header;
+}
+
+.sidebar {
+  background-color: magenta;
+  grid-area: sidebar;
+
+}
+
+.main-content {
+  background-color: #00ff00;
+  grid-area: main-content;
+}
+
+.footer {
+  background-color: orange;
+  grid-area: footer;
+}
