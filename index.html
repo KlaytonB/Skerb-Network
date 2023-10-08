@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html ng-app="skerb" ng-controller="myCtrl">
+<html ng-app="skerb" ng-controller="customersCtrl">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>replit</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
 </head>
 
 <body>
@@ -14,9 +14,7 @@
     <div class="logo">
       img
     </div>
-    <div class="header">
-      skerb
-    </div>
+    <div class="header" ng-include="'assets/page-assets/header.html'"></div>
     <div class="sidebar">
       menu
     </div>
@@ -32,11 +30,12 @@
   <script src="script.js"></script>
   <script>
     var app = angular.module('skerb', []);
-    app.controller('myCtrl', function($scope) {
-      $scope.netHome = "Skerb Home";
-      $scope.netTitle = "Skerb Network";
+    app.controller('customersCtrl', function($scope) {
+      $scope.netName = "Skerb Network";
+      $scope.netHome = "Home";
     });
   </script>
+ 
 </body>
 
 </html>
