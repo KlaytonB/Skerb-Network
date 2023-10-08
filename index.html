@@ -5,25 +5,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="styles/style.css" rel="stylesheet" type="text/css" />
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
 </head>
 
 <body>
   <div class="wrapper">
-    <div class="logo">
-      img
-    </div>
+    <div class="logo" ng-include="'assets/page-assets/logo.html'"></div>
     <div class="header" ng-include="'assets/page-assets/header.html'"></div>
-    <div class="sidebar">
-      menu
-    </div>
-    <div class="main-content">
-      hello world
-    </div>
-    <div class="footer">
-      copyright
-    </div>
+    <div class="sidebar" ng-include="'assets/page-assets/sidebar.html'"></div>
+    <div class="main-content"></div>
+    <div class="footer" ng-include="'assets/page-assets/footer.html'"></div>
   </div>
 
 
